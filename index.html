@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content = "HTML">
     <meta name="author" content="Jason Yang">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,27 +22,27 @@
                 PathFinding Visualizer 
             </h1>
             <div class="speeddropdown">
-                <button onclick="DropDown(event)" id='speedbtntext' class='btn-speed'>speed: Fast<i style="padding-left:10px"
+                <button onclick="DropDown(event)" id='speedbtntext' class='btn-speed'>Speed: Fast<i style="padding-left:10px"
                         class="fa fa-caret-down"></i></button>
                 <div class="speeddropdownContent">
                     <a onclick="changeSpeed(this)" class='speed-link' href="#">Fast</a>
-                    <a onclick="changeSpeed(this)" class='speed-link' href="#">slow</a>
+                    <a onclick="changeSpeed(this)" class='speed-link' href="#">Slow</a>
                     <a onclick="changeSpeed(this)" class='speed-link' href="#">Average</a>
                 </div>
             </div>
             <div class="algodropdown">
-                <button onclick="DropDown(event)" class='btn-algo' id='algobtntext'>Algorithm's<i
+                <button onclick="DropDown(event)" class='btn-algo' id='algobtntext'>Algorithms<i
                         style="padding-left:10px" class="fa fa-caret-down"></i></button>
                 <div class="algodropdownContent">
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Breadth first search</a>
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Best first search</a>
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Dijkstra</a>
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">A *</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Breadth First Search</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Best First Search</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Dijkstra's</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">A*</a>
                 </div>
             </div>
             <div class="MazeDropDown">
                 <button onclick="DropDown(event)" id="mazebtntext" class='btn-maze'><span></span>Maze
-                    generation</span><i style="padding-left:10px" class="fa fa-caret-down"></i></button>
+                    Generation</span><i style="padding-left:10px" class="fa fa-caret-down"></i></button>
                 <div class="mazaDropDowncontent">
                     <a class='maze-link' onclick="randomMaze()" href="#">Random Maze</a>
 
@@ -50,11 +50,11 @@
             </div>
             <div class="speeddropdown" style="margin: 0;padding: 0;">
                 <button onclick="clearAll()" class='speeddropdown btn-speed' id='btnclearswalls'
-                    style='border: none; color: rgb(6, 122, 83);'>clear All</button>
+                    style='border: none; color: rgb(6, 122, 83);'>Clear All</button>
             </div>
             <div class="speeddropdown" style="margin: 0;padding: 0;">
                 <button onclick="clearPath()" class='speeddropdown btn-speed' id='btnclearswalls'
-                    style='border: none; color: rgb(6, 122, 83);'>clear Path and Visited nodes</button>
+                    style='border: none; color: rgb(6, 122, 83);'>Clear path and visited nodes</button>
             </div>
     </header>
     
@@ -65,7 +65,7 @@
             </button>
             <div class='algo-desc'>
                 <div class="algo-desc" id='algoDesc'>
-                    Path findind Visualizeer visualizes searching algorithms and give you the
+                    Pathfinding Visualizer visualizes searching algorithms and give you the
                     shortest path.</div>
                 <div class="box">
                     <p style="margin: 0;color: rgb(6, 136, 136);">Visited Nodes</p>
