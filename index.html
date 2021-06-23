@@ -3,22 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Jason Yang">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icnon.png" type="image/x-icon">
-    <title>Pathfinder</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="icon1.png" type="image/x-icon">
+    <title>Pathfinding Visualizer App</title>
 </head>
 
 <body ondragstart="return false;" ondrop="return false;">
     <header>
         <div class="navbar">
             <h1 class="nav-h">
-                Path Finder
+                PathFinding Visualizer 
             </h1>
             <div class="speeddropdown">
                 <button onclick="DropDown(event)" id='speedbtntext' class='btn-speed'>speed: Fast<i style="padding-left:10px"
@@ -85,7 +86,7 @@
             <span style="float: left; font-size:25px; font-weight: 700;float: right;
             padding-right: 10px;" onclick="closePopUp(this)" class="close" id='close'>x</span>  
             <p style="float: left; padding-right: 10px; margin-top: 5px;text-align:center; font-weight: 700">
-                <strong style="center;color: darkgreen;text-align: end;">Demonstration</strong>
+                <strong style="color: darkgreen;text-align: end;">Demonstration</strong>
                 <br><br>
                 Click and drag mouse on grid to make <strong style="color: red;">walls</strong> 
                 select an <strong style="color: red;">Algorithm</strong> and click visualize</p>
@@ -95,6 +96,6 @@
                  color: white;">Tutorial page</a> -->
         </div>
 </body>
-<script src="scriptBasics.js"></script>
+<script src="./js/scriptBasics.js"></script>
 
 </html>
