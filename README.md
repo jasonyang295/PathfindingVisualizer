@@ -1,6 +1,6 @@
 # Pathfinding Visualizer App
 
-This was an application I created to visualize famous pathfinding and maze generation algorithms. It was built primarily in HTML, CSS, and JS. All instructions on how to use the application are included in the tutorial box when the app is opened. All algorithms listed below also have more detailed descriptions listed if you click the small "info" button next to the "algorithms" dropdown menu. Check it out [here](https://jasonyang295.github.io/pathfindingvisualizer/). 
+This was an application I created to visualize famous pathfinding and maze generation algorithms. It was built primarily in HTML, CSS, and JS, and it was deeply inspired by Clement Mihailescu's [Pathfinding Visualizer](https://www.youtube.com/watch?v=msttfIHHkak&ab_channel=Cl%C3%A9mentMihailescu). All instructions on how to use the application are included in the tutorial box when the app is opened. All algorithms listed below also have more detailed descriptions listed if you click the small "info" button next to the "algorithms" dropdown menu. Check it out [here](https://jasonyang295.github.io/pathfindingvisualizer/). 
 
 ## Side Note
 I used the getmdl package in this app, and I've attached a license and readme in the folder if you're interested. Check them out [here](https://creativeit.github.io/getmdl-select/).
