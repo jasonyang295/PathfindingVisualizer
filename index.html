@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content = "HTML">
-    <meta name="author" content="Jason Yang">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="icon1.png" type="image/x-icon">
-    <title>Pathfinding Visualizer App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icnon.png" type="image/x-icon">
+    <title>Pathfinder</title>
 </head>
 
 <body ondragstart="return false;" ondrop="return false;">
     <header>
         <div class="navbar">
             <h1 class="nav-h">
-                PathFinding Visualizer 
+                Path Finder
             </h1>
             <div class="speeddropdown">
-                <button onclick="DropDown(event)" id='speedbtntext' class='btn-speed'>Speed: Fast<i style="padding-left:10px"
+                <button onclick="DropDown(event)" id='speedbtntext' class='btn-speed'>speed: Fast<i style="padding-left:10px"
                         class="fa fa-caret-down"></i></button>
                 <div class="speeddropdownContent">
                     <a onclick="changeSpeed(this)" class='speed-link' href="#">Fast</a>
-                    <a onclick="changeSpeed(this)" class='speed-link' href="#">Slow</a>
+                    <a onclick="changeSpeed(this)" class='speed-link' href="#">slow</a>
                     <a onclick="changeSpeed(this)" class='speed-link' href="#">Average</a>
                 </div>
             </div>
             <div class="algodropdown">
-                <button onclick="DropDown(event)" class='btn-algo' id='algobtntext'>Algorithms<i
+                <button onclick="DropDown(event)" class='btn-algo' id='algobtntext'>Algorithm's<i
                         style="padding-left:10px" class="fa fa-caret-down"></i></button>
                 <div class="algodropdownContent">
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Breadth First Search</a>
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Best First Search</a>
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Dijkstra's</a>
-                    <a onclick="changeAlgo(this)" class='algo-link' href="#">A*</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Breadth first search</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Best first search</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">Dijkstra</a>
+                    <a onclick="changeAlgo(this)" class='algo-link' href="#">A *</a>
                 </div>
             </div>
             <div class="MazeDropDown">
                 <button onclick="DropDown(event)" id="mazebtntext" class='btn-maze'><span></span>Maze
-                    Generation</span><i style="padding-left:10px" class="fa fa-caret-down"></i></button>
+                    generation</span><i style="padding-left:10px" class="fa fa-caret-down"></i></button>
                 <div class="mazaDropDowncontent">
                     <a class='maze-link' onclick="randomMaze()" href="#">Random Maze</a>
 
@@ -50,23 +49,23 @@
             </div>
             <div class="speeddropdown" style="margin: 0;padding: 0;">
                 <button onclick="clearAll()" class='speeddropdown btn-speed' id='btnclearswalls'
-                    style='border: none; color: rgb(6, 122, 83);'>Clear All</button>
+                    style='border: none; color: rgb(6, 122, 83);'>clear All</button>
             </div>
             <div class="speeddropdown" style="margin: 0;padding: 0;">
                 <button onclick="clearPath()" class='speeddropdown btn-speed' id='btnclearswalls'
-                    style='border: none; color: rgb(6, 122, 83);'>Clear path and visited nodes</button>
+                    style='border: none; color: rgb(6, 122, 83);'>clear Path and Visited nodes</button>
             </div>
     </header>
     
     <div class="container">
         <div class="visualize">
             <button onclick="visualize()" id='btnVis' class="btn-visualize">
-                Visualize <span id='algoName'>Algorithm</span>
+                Visualize {<span id='algoName'>Algorithm</span>}
             </button>
             <div class='algo-desc'>
-                <!-- <div class="algo-desc" id='algoDesc'>
-                    Pathfinding Visualizer visualizes searching algorithms and give you the
-                    shortest path.</div> -->
+                <div class="algo-desc" id='algoDesc'>
+                    Path findind Visualizeer visualizes searching algorithms and give you the
+                    shortest path.</div>
                 <div class="box">
                     <p style="margin: 0;color: rgb(6, 136, 136);">Visited Nodes</p>
                     <i class='boxVisited' id='boxVisited'></i>
@@ -86,13 +85,16 @@
             <span style="float: left; font-size:25px; font-weight: 700;float: right;
             padding-right: 10px;" onclick="closePopUp(this)" class="close" id='close'>x</span>  
             <p style="float: left; padding-right: 10px; margin-top: 5px;text-align:center; font-weight: 700">
-                <strong style="color: darkgreen;text-align: end;">Demonstration</strong>
+                <strong style="center;color: darkgreen;text-align: end;">Demonstration</strong>
                 <br><br>
-                Click and drag mouse on grid to create <strong style="color: red;">walls</strong>. 
-                To start, select an <strong style="color: red;">Algorithm</strong> and click "Visualize Algorithm"</p>
+                Click and drag mouse on grid to make <strong style="color: red;">walls</strong> 
+                select an <strong style="color: red;">Algorithm</strong> and click visualize</p>
             
             <img src="homeAnimation1.gif" alt="" style="transform: scale(0.9);">
+            <!-- <a href="tutorialpage.html" id='btnVis' class="btn-tut" style="font-style: normal;text-decoration: none;
+                 color: white;">Tutorial page</a> -->
         </div>
 </body>
-<script src="./js/scriptBasics.js"></script>
+<script src="scriptBasics.js"></script>
+
 </html>
