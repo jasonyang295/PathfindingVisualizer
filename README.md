@@ -17,4 +17,7 @@ This is arguably the best pathfinding algorithm as it uses heuristics to guarant
 A classic algorithm that guarantees the shortest path. 
 
 ### Recursive Maze Generation
-An algorithm that will automatically generate a seemingly-random maze via the depth-first search algorithm. Once generated, you can use the other three algorithms to find the path. 
+An algorithm that will automatically generate a seemingly-random maze via the depth-first search algorithm. Once generated, you can use the other three algorithms to find the shortest path.
+
+## Next Steps? 
+I learned a lot about front-end web dev from this project, as well as how to write the algorithms themselves in js. Possible next steps may be to implement more algorithms -- I've seen others use a wider variety (such as greedy best first search or bidirectional search) and to potentially integrate this project with a framework such as Reactjs. 
